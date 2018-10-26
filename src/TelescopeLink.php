@@ -28,6 +28,10 @@ class TelescopeLink extends Tool
         view()->composer(self::VIEW_NAME, function ($view) {
             $view->with('label', $this->label);
         });
+
+        $this->canSee(function ($request) {
+            return Telescope::check($request);
+        });
     }
 
     /**
