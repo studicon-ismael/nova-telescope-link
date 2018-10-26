@@ -19,6 +19,14 @@ class TelescopeLink extends Tool
     }
 
     /**
+     * Create link with _Telescope_ logo
+     */
+    public static function useLogo(): self
+    {
+        return new static(null);
+    }
+
+    /**
      * Perform any tasks that need to happen when the tool is booted.
      *
      * @return void
