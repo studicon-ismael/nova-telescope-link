@@ -1,0 +1,43 @@
+{
+    "name": "mad-web/nova-telescope-link",
+    "description": "Smart Link for Laravel Nova to Telescope Debug Assistant.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "nova",
+        "telescope",
+        "link"
+    ],
+    "homepage": "https://github.com/mad-web/nova-telescope-link",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mad Web",
+            "email": "madweb.dev@gmail.com",
+            "homepage": "https://github.com/mad-web",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/telescope": "^0.1",
+        "laravel/nova": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MadWeb\\NovaTelescopeLink\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MadWeb\\NovaTelescopeLink\\LinkServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
