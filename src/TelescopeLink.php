@@ -19,7 +19,7 @@ class TelescopeLink extends Tool
     }
 
     /**
-     * Create link with _Telescope_ logo
+     * Create link with _Telescope_ logo.
      */
     public static function useLogo(): self
     {
