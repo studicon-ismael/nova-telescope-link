@@ -23,9 +23,9 @@ class TelescopeLink extends Tool
     /**
      * Create link with _Telescope_ logo.
      */
-    public static function useLogo(): self
+    public static function useLogo(?string $target = 'self'): self
     {
-        return new static(null);
+        return new static(null, $target);
     }
 
     /**
